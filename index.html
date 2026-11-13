@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="PhishLens passively triages suspicious email and URLs without opening links." />
+    <meta name="theme-color" content="#1a1210" />
+    <title>PhishLens — Pause before you click.</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="shell">
+      <header class="topbar"><a class="brand" href="#top"><span class="mark">◈</span><span>PHISH<span>LENS</span></span></a><div class="meta"><span class="pulse"></span> PASSIVE TRIAGE <i></i> PROJECT 05</div></header>
+      <main id="top">
+        <section class="hero"><div><p class="kicker">HUMAN-CENTRIC DEFENSE / MESSAGE TRIAGE / 05</p><h1>Pause<br /><em>before you click.</em></h1><p class="lede">A calm, local-first way to inspect suspicious messages and links for the signals phishers leave behind.</p><div class="hero-rule"><span>READ</span><b>→</b><span>QUESTION</span><b>→</b><span>VERIFY</span></div></div><div class="lens" aria-hidden="true"><div class="lens-circle"><span>CHECK</span><b>?</b></div><div class="lens-ray ray-one"></div><div class="lens-ray ray-two"></div><label>TRUST</label></div></section>
+
+        <section class="triage-grid"><div class="panel input-panel"><div class="panel-head"><div><p class="kicker">01 / MESSAGE</p><h2>Bring the message into focus</h2></div><span class="micro">NO LINK VISITS</span></div><p class="intro">Paste an email, message, or URL. PhishLens reads the text in this tab and never opens anything it finds.</p><div class="paste-head"><span>MESSAGE OR URL</span><button id="sample" type="button">Load synthetic sample ↗</button></div><textarea id="content" spellcheck="false" placeholder="Paste the complete message, including the sender, reply-to, body, and any links…"></textarea><div class="input-actions"><button class="scan-button" id="scan" type="button"><span>Run passive triage</span><b>→</b></button><button class="clear-button" id="clear" type="button">Clear</button></div><p class="privacy"><span>◉</span> Nothing is fetched or submitted.</p></div><aside class="panel signals"><div class="panel-head"><div><p class="kicker">02 / SIGNALS</p><h2>What gets questioned</h2></div><span class="micro">LOCAL RULES</span></div><div class="signal-list"><div><span>01</span><p><strong>Link shape</strong><small>IP hosts, punycode, obfuscation</small></p></div><div><span>02</span><p><strong>Identity mismatch</strong><small>From, Reply-To, and link domains</small></p></div><div><span>03</span><p><strong>Pressure language</strong><small>Urgency, threats, payment asks</small></p></div><div><span>04</span><p><strong>Attachment cues</strong><small>Macros, executables, archives</small></p></div></div><div class="signal-foot"><strong>STOP</strong><p>Verify through a known channel when a message creates pressure.</p></div></aside></section>
+
+        <section class="results" id="results" aria-live="polite"><div class="result-head"><div><p class="kicker">03 / TRIAGE NOTE</p><h2>What deserves a second look?</h2></div><div class="result-actions"><span id="status">Waiting for a message</span><button id="download" type="button" disabled>↓ Export JSON</button></div></div><div class="summary"><div class="score-card main"><span>RISK SCORE</span><strong id="score">—</strong><small id="scoreHint">Run a triage pass to calculate</small><div class="risk-bar"><i id="riskBar"></i></div></div><div class="score-card"><span>INDICATORS</span><strong id="indicators">—</strong><small>Signals found locally</small></div><div class="score-card"><span>HIGH</span><strong id="high">—</strong><small>Verify before acting</small></div><div class="score-card"><span>REVIEW</span><strong id="review">—</strong><small>Context matters</small></div></div><div class="report-grid"><div class="panel findings-panel"><div class="subhead"><h3>Signals found</h3><span id="findingCount">0 indicators</span></div><div id="findings" class="findings"><div class="empty"><span>◈</span><strong>No triage yet</strong><p>Paste the message or load the sample to surface explainable indicators.</p></div></div></div><div class="panel guide"><div class="subhead"><h3>Safe next steps</h3><span>HUMAN CHECK</span></div><div class="guide-list"><div><b>01</b><p><strong>Do not click.</strong> Use a saved bookmark or type the known site yourself.</p></div><div><b>02</b><p><strong>Verify separately.</strong> Call a known number or start a new message thread.</p></div><div><b>03</b><p><strong>Report and remove.</strong> Preserve evidence for your security team, then delete the message.</p></div></div><p class="disclaimer">Heuristics can miss sophisticated phish and can flag legitimate messages. Treat the report as a pause button, not a verdict.</p></div></div></section>
+      </main>
+      <footer><span><b>PH</b> PHISHLENS / PROJECT FIVE</span><span>Built for authorized defensive triage.</span><a href="https://github.com/">GITHUB ↗</a></footer>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
