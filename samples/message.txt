@@ -1,0 +1,9 @@
+From: Billing Support <billing@paypa1.example.invalid>
+Reply-To: recovery@secure-mail.example.invalid
+Subject: URGENT: verify your account within 24 hours
+Date: 13 Nov 2026
+
+Your account will be suspended immediately. Confirm your payment details here:
+https://secure-login.example.invalid/verify?session=583920
+
+Attachment: invoice_2026.js
